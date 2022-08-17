@@ -1,0 +1,131 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #e5e5e5;
+}
+.logo {
+    position: absolute;
+    left: 84px;
+    right: 37.43%;
+    top: 40px;
+    bottom: 0%;
+}
+
+.texto-capturado {
+    position: absolute;
+    width: 577px;
+    height: 48px;
+    left: 240px;
+    top: 168px;
+    color: #0a3871;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+    background-color: #e5e5e5;
+}
+
+.texto-capturado::placeholder {
+    color: #0a3871;
+    font-weight: bold;
+}
+
+.advertencia img {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin: 0 8px 0 0;
+}
+
+p {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    display: inline;
+    vertical-align: top;
+}
+
+.advertencia {
+    position: absolute;
+    left: 240px;
+    right: 0%;
+    top: 852px;
+    bottom: 0%;
+}
+
+.botones {
+    position: absolute;
+    left: 240px;
+    top: 885px;
+}
+
+.encriptar,
+.desencriptar {
+    width: 328px;
+    height: 96px;
+    border-radius: 24px;
+    font-size: 20px;
+    border-color: #0a3871;
+}
+
+.encriptar {
+    background-color: #0a3871;
+    color: #ffffff;
+    margin: 0 24px 0 0;
+}
+
+.desencriptar {
+    color: #0a3871;
+}
+
+.lateral {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    background-color: #ffffff;
+    border-radius: 32px;
+    margin: 40px 40px 40px 1000px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    -webkit-border-radius: 32px #0a3871;
+    -moz-border-radius: 32px #0a3871;
+    -ms-border-radius: 32px #0a3871;
+    -o-border-radius: 32px #0a3871;
+}
+
+.muneco {
+    width: 336px;
+    height: 304px;
+    position: absolute;
+    align-items: center;
+    margin: 283px 32px 397px 32px;
+}
+
+h2 {
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    line-height: 120%;
+    font-weight: 700;
+    width: 336px;
+    height: 58px;
+    margin: 579px 32px 307px 32px;
+}
+
+h2 ~ p {
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 400;
+    width: 336px;
+    height: 58px;
+    margin: 653px 32px 243px 32px;
+    color: #495057;
+}
