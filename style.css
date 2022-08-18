@@ -1,6 +1,13 @@
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Inter", sans-serif;
     background-color: #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 .logo {
     position: absolute;
@@ -107,7 +114,7 @@ p {
     margin: 283px 32px 397px 32px;
 }
 
-h2 {
+#h2 {
     position: absolute;
     text-align: center;
     font-size: 24px;
@@ -118,7 +125,7 @@ h2 {
     margin: 579px 32px 307px 32px;
 }
 
-h2 ~ p {
+p ~ p {
     position: absolute;
     text-align: center;
     font-size: 16px;
@@ -128,4 +135,17 @@ h2 ~ p {
     height: 58px;
     margin: 653px 32px 243px 32px;
     color: #495057;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    background: #0a3871;
+    padding: 40px;
+    color: #ffffff;
+}
+footer h3 strong {
+    font-weight: bold;
 }
