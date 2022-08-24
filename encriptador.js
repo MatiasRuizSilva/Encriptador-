@@ -1,6 +1,10 @@
+const textoObtenido = document.getElementById("texto-capturado");
+const botonDesencriptado = document.querySelector(".desencriptar");
+const botonEncriptado = document.querySelector(".encriptar");
+
 var texto = "hola como estas";
 
-function pasarArray(palabra) {
+function pasarPalabraArray(palabra) {
     var arr = [];
     for (let letra of texto) {
         if (letra == "a") {
@@ -25,7 +29,7 @@ function pasarArray(palabra) {
     console.log(arr.join(""));
 }
 
-let textoEncriptado = pasarArray(texto);
+let textoEncriptado = pasarPalabraArray(texto);
 
 // La letra "a" es convertida para "ai"
 // La letra "e" es convertida para "enter"
@@ -74,10 +78,11 @@ function conv(text) {
 
 conv(tee);
 
-// let textoObtenido = document.getElementById(texto-captuado).value;
+// addEventListener
 
+console.log(botonDesencriptado);
+console.log(botonEncriptado);
 
-
-
-
-
+botonEncriptado.addEventListener("click", (e) => {
+    console.log(textoObtenido.value);
+});
