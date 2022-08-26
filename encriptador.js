@@ -2,9 +2,11 @@ const textoObtenido = document.getElementById("texto-capturado");
 const botonDesencriptado = document.querySelector(".desencriptar");
 const botonEncriptado = document.querySelector(".encriptar");
 
-var texto = "hola como estas";
+// var texto = "hola como estas";
+var texto = document.getElementById(textoObtenido);
 
-function pasarPalabraArray(palabra) {
+function pasarPalabraArray() {
+    let texto = document.getElementById("textoObtenido")
     var arr = [];
     for (let letra of texto) {
         if (letra == "a") {
@@ -26,6 +28,8 @@ function pasarPalabraArray(palabra) {
             arr.push(letra);
         }
     }
+    document.getElementById("muneco").style.display = none;
+    
     console.log(arr.join(""));
 }
 
