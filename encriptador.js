@@ -1,12 +1,8 @@
-const textoObtenido = document.getElementById("texto-capturado");
+const textoObtenido = document.querySelector(".texto-capturado");
 const botonDesencriptado = document.querySelector(".desencriptar");
 const botonEncriptado = document.querySelector(".encriptar");
 
-// var texto = "hola como estas";
-var texto = document.getElementById(textoObtenido);
-
-function pasarPalabraArray() {
-    let texto = document.getElementById("textoObtenido")
+function pasarPalabraArray(texto) {
     var arr = [];
     for (let letra of texto) {
         if (letra == "a") {
@@ -28,39 +24,21 @@ function pasarPalabraArray() {
             arr.push(letra);
         }
     }
+    var textoconvertido = arr.join("");
     document.getElementById("muneco").style.display = none;
-    
+    document.getElementById("texto").style.display = none;
+    document.getElementById("texto2").innerHTML = textoconvertido;
+    document.getElementById("copiar").style.display = "show";
+    document.getElementById("copiar").style.display = "inherit";
+
     console.log(arr.join(""));
 }
-
-let textoEncriptado = pasarPalabraArray(texto);
 
 // La letra "a" es convertida para "ai"
 // La letra "e" es convertida para "enter"
 // La letra "i" es convertida para "imes"
 // La letra "o" es convertida para "ober"
 // La letra "u" es convertida para "ufat"
-
-function desencriptador(texto) {
-    if (texto.includes("ai")) {
-        texto.replace("ai", "a");
-    }
-    if (texto.includes("enter")) {
-        texto.replace("enter", "e");
-    }
-    if (texto.includes("imes")) {
-        texto.replace("imes", "i");
-    }
-    if (texto.includes("ober")) {
-        texto.replace("ober", "o");
-    }
-    if (texto.includes("ufat")) {
-        texto.replace("ufat", "u");
-    }
-    return texto;
-}
-
-let tee = "hoberlai cobermober enterstais";
 
 function conv(text) {
     while (
@@ -80,13 +58,12 @@ function conv(text) {
     console.log(text);
 }
 
-conv(tee);
-
 // addEventListener
-
-console.log(botonDesencriptado);
-console.log(botonEncriptado);
 
 botonEncriptado.addEventListener("click", (e) => {
     console.log(textoObtenido.value);
+});
+
+botonDesencriptado.addEventListener("click", (e) => {
+    console.log(textoObtenido);
 });

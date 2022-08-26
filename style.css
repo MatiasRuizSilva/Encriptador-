@@ -75,8 +75,8 @@ p {
 
 .encriptar,
 .desencriptar {
-    width: 328px;
-    height: 96px;
+    width: 20em;
+    height: 5em;
     border-radius: 1.5em;
     font-size: 1.25em;
     border-color: #0a3871;
@@ -93,17 +93,13 @@ p {
 }
 
 .lateral {
-    position: absolute;
-    width: 400px;
-    height: 944px;
+    width: 25em;
+    height: 59em;
     background-color: #ffffff;
     border-radius: 32px;
-    margin: 40px 40px 40px 1000px;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    -webkit-border-radius: 32px #0a3871;
-    -moz-border-radius: 32px #0a3871;
-    -ms-border-radius: 32px #0a3871;
-    -o-border-radius: 32px #0a3871;
+    margin-top: 2%;
+    margin-left: 60%;
+    box-shadow: 0px 24px 32px -8px rgba(10px, 0, 0, 0.08);
 }
 
 .muneco {
@@ -114,7 +110,7 @@ p {
     margin: 283px 32px 397px 32px;
 }
 
-#h2 {
+#texto {
     position: absolute;
     text-align: center;
     font-size: 24px;
@@ -155,11 +151,34 @@ footer h3 {
 .linkedin {
     float: center;
     width: 20px;
-    /* margin: 15px; */
+    margin: 0px 10px;
 }
 
-.futer{
+.github {
+    padding: 0 0 0 12px;
+}
+
+.futer {
     width: 100%;
     margin: auto;
     text-align: top;
+}
+
+#copiar {
+    width: 328px;
+    height: 96px;
+    border-radius: 1.5em;
+    font-size: 1.25em;
+    margin-left: 33%;
+    margin-top: 90%;
+    padding: 24px;
+    width: 40%;
+    height: 10%;
+    border-radius: 24px;
+    display: none;
+}
+
+::-webkit-scrollbar {
+    /*quita las barras laterales */
+    display: none;
 }
