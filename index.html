@@ -4,57 +4,96 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
             rel="stylesheet"
         />
         <title>Encriptador</title>
     </head>
     <body>
-        <main>
-            <div class="logo">
-                <img src="images/logo.png" alt="logo-encriptador" />
+        <div class="container">
+            <div class="left">
+                <header class="header">
+                    <div class="header__logo">
+                        <img src="images/logo.svg" alt="logo-encriptador" />
+                    </div>
+                </header>
+                <main class="main">
+                    <div class="main__box">
+                        <textarea
+                            class="main__textarea"
+                            type="text-area"
+                            placeholder="Ingrese el texto aqui"
+                        ></textarea>
+                    </div>
+
+                    <div class="main__advertencia">
+                        <img
+                            src="images/Vector.svg"
+                            alt="alert"
+                            class="main__img--advertencia"
+                        />
+                        <p class="main__p--advertencia">
+                            Solo letras minusculas y sin acentos
+                        </p>
+                    </div>
+                    <div class="main__botones">
+                        <button class="main__btn-encriptar">Encriptar</button>
+                        <button class="main__btn-desencriptar">
+                            Desencriptar
+                        </button>
+                    </div>
+                </main>
             </div>
-            <input
-                class="texto-capturado"
-                type="text"
-                placeholder="Ingrese el texto aqui"
-            />
-            <div class="advertencia">
-                <img src="images/alert.png" alt="alert" />
-                <p>Solo letras minusculas y sin acentos</p>
+            <div class="right">
+                <aside class="aside">
+                    <!-- <input type="text" /> -->
+                    <img
+                        id="muneco"
+                        class="aside__img"
+                        src="images/Muñeco.png"
+                        alt="muñeco"
+                    />
+                    <h2 class="aside__h2" id="texto">
+                        Ningun mensaje fue encontrado
+                    </h2>
+                    <p class="aside__p" id="texto2">
+                        Ingresa el texto que desees encriptar o desencriptar.
+                    </p>
+                    <button id="copiar" class="aside__btn-copy">
+                        !Copiar!
+                    </button>
+                </aside>
             </div>
-            <div class="botones">
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
-            </div>
-            <div class="lateral">
-                <img id="muneco" class="muneco" src="images/Muñeco.png" alt="muñeco" />
-                <p id="texto">Ningun mensaje fue encontrado</p>
-                <p id="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
-                <button id="copiar">!Copiar!</button>
-            </div>
-        </main>
-        <footer>
-            <div class="futer">
-                <h3>
-                    Ⓒ Hecho por <strong>Matias Ruiz Silva</strong> - 2022
-                    <a href="https://github.com/MatiasRuizSilva"
+        </div>
+        <footer class="footer">
+            <h3 class="footer__h3">
+                Ⓒ Hecho por <strong>Matias Ruiz Silva</strong> - 2022
+            </h3>
+            <ul class="footer__ul">
+                <li class="footer__li">
+                    <a href="https://github.com/MatiasRuizSilva" target="_blank"
                         ><img
-                            class="github"
+                            class="footer__github"
                             src="Logo PNG/github-logo white redondo.png"
                     /></a>
-                    <a href="https://www.linkedin.com/in/matias-ruiz-silva/"
+                </li>
+                <li class="footer__li">
+                    <a
+                        href="https://www.linkedin.com/in/matias-ruiz-silva/"
+                        target="_blank"
                         ><img
-                            class="linkedin"
+                            class="footer__linkedin"
                             src="Logo PNG/Linkedin redondeado.png"
                     /></a>
-                </h3>
-            </div>
+                </li>
+            </ul>
         </footer>
+
         <script src="encriptador.js"></script>
     </body>
 </html>

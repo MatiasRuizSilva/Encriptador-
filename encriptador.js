@@ -61,8 +61,8 @@ function conv(text) {
 // addEventListener
 
 botonEncriptado.addEventListener("click", (e) => {
-    console.log(textoObtenido.value);
-});
+    console.log(textoObtenido.value); 
+});  
 
 botonDesencriptado.addEventListener("click", (e) => {
     console.log(textoObtenido);
