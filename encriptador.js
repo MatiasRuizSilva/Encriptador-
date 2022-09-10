@@ -1,6 +1,6 @@
-const textoObtenido = document.querySelector(".texto-capturado");
-const botonDesencriptado = document.querySelector(".desencriptar");
-const botonEncriptado = document.querySelector(".encriptar");
+const textoObtenido = document.querySelector(".main__textarea");
+const botonDesencriptado = document.querySelector("main__btn-desencriptar");
+const botonEncriptado = document.querySelector(".main__btn-encriptar");
 
 function pasarPalabraArray(texto) {
     var arr = [];
@@ -25,8 +25,8 @@ function pasarPalabraArray(texto) {
         }
     }
     var textoconvertido = arr.join("");
-    document.getElementById("muneco").style.display = none;
-    document.getElementById("texto").style.display = none;
+    document.getElementById("muneco").style.display = "none";
+    document.getElementById("texto").style.display = "none";
     document.getElementById("texto2").innerHTML = textoconvertido;
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
@@ -61,9 +61,10 @@ function conv(text) {
 // addEventListener
 
 botonEncriptado.addEventListener("click", (e) => {
-    console.log(textoObtenido.value); 
-});  
-
-botonDesencriptado.addEventListener("click", (e) => {
-    console.log(textoObtenido);
+    console.log(textoObtenido.value);
+    pasarPalabraArray(textoObtenido.value);
 });
+
+// botonDesencriptado.addEventListener("click", (e) => {
+//     console.log(textoObtenido);
+// });

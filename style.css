@@ -106,6 +106,9 @@ body {
     color: #ffffff;
     /* margin-right: 2em; */
 }
+
+
+
 .main__btn-desencriptar {
     height: 5em;
     border-radius: 1.5em;
@@ -128,7 +131,7 @@ body {
 .aside__img {
     display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .aside__img {
         display: block;
     }
