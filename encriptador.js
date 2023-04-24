@@ -1,5 +1,5 @@
 const textoObtenido = document.querySelector(".main__textarea");
-const botonDesencriptado = document.querySelector("main__btn-desencriptar");
+const botonDesencriptado = document.querySelector(".main__btn-desencriptar");
 const botonEncriptado = document.querySelector(".main__btn-encriptar");
 
 function pasarPalabraArray(texto) {
@@ -31,7 +31,7 @@ function pasarPalabraArray(texto) {
     document.getElementById("copiar").style.display = "show";
     document.getElementById("copiar").style.display = "inherit";
 
-    console.log(arr.join(""));
+    console.log(textoconvertido);
 }
 
 // La letra "a" es convertida para "ai"
@@ -56,6 +56,11 @@ function conv(text) {
         text = u;
     }
     console.log(text);
+    document.getElementById("muneco").style.display = "none";
+    document.getElementById("texto").style.display = "none";
+    document.getElementById("texto2").innerHTML = text;
+    document.getElementById("copiar").style.display = "show";
+    document.getElementById("copiar").style.display = "inherit";
 }
 
 // addEventListener
@@ -65,6 +70,12 @@ botonEncriptado.addEventListener("click", (e) => {
     pasarPalabraArray(textoObtenido.value);
 });
 
-// botonDesencriptado.addEventListener("click", (e) => {
-//     console.log(textoObtenido);
-// });
+botonDesencriptado.addEventListener("click", (e) => {
+    console.log(textoObtenido.value);
+    conv(textoObtenido.value);
+});
+
+function copy(palabra){
+    document.getElementById("texto2").innerHTML = palabra;
+
+}
